@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Corporate Tycoon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🏢 Corporate Tycoon</h1>
+  <p>Click your way from a garage startup to a global empire.</p>
+</header>
+
+<div class="office-wrap">
+  <div class="office" id="office">
+    <div class="office-empty" id="officeEmpty">Hire your first staff to bring the office to life...</div>
+  </div>
+  <div class="office-caption">Your office fills up as you hire — watch your team grow in real time.</div>
+</div>
+
+<div class="layout">
+
+  <!-- Clicker Panel -->
+  <div class="panel clicker-area" style="position:relative;">
+    <h2 style="width:100%;">Company</h2>
+    <div class="money" id="moneyDisplay">$0</div>
+    <div class="rate" id="rateDisplay">+$0.00 / sec (auto)</div>
+
+    <div id="clickWrap" style="position:relative;">
+      <button id="clickBtn">
+        <span class="emoji">💼</span>
+        <span>Close a Deal</span>
+      </button>
+    </div>
+
+    <div class="stats-mini">
+      <div class="stat-chip">Per Click: <b id="perClick">$1</b></div>
+      <div class="stat-chip">Total Earned: <b id="totalEarned">$0</b></div>
+      <div class="stat-chip">Total Clicks: <b id="totalClicks">0</b></div>
+    </div>
+
+    <div class="toolbar">
+      <button id="saveBtn">💾 Save</button>
+      <button id="exportBtn">⬇ Export</button>
+      <button id="importBtn">⬆ Import</button>
+      <button id="resetBtn" class="danger">♻ Reset</button>
+    </div>
+  </div>
+
+  <!-- Upgrades Panel -->
+  <div class="panel">
+    <h2>Staff &amp; Upgrades</h2>
+    <div class="upgrade-list" id="upgradeList"></div>
+  </div>
+
+</div>
+
+<footer>Progress auto-saves to your browser every few seconds. Corporate Tycoon &mdash; a static offline game.</footer>
+<div id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
